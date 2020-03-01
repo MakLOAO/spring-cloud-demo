@@ -2,10 +2,7 @@ package com.mkl.consumer.controller;
 
 import com.mkl.api.pojo.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
@@ -35,6 +32,11 @@ public class DeptConsumerController {
     @RequestMapping("/consumer/dept/list")
     public List<Dept> list(Dept dept) {
         return restTemplate.getForObject(REST_URL_PREFIX + "/dept/list", List.class);
+    }
+
+    @GetMapping("/consumer/discovery")
+    public Object discovery() {
+        return restTemplate.getForObject(REST_URL_PREFIX + "/dept/discovery", Object.class);
     }
 
 }
