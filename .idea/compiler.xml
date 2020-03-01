@@ -9,6 +9,7 @@
         <module name="scconsumerdept8002" />
         <module name="scproviderdept8001" />
         <module name="springcloudapi" />
+        <module name="springcloudeureka7001" />
       </profile>
     </annotationProcessing>
   </component>
