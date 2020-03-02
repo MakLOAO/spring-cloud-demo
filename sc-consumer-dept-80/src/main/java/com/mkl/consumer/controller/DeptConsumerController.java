@@ -15,7 +15,9 @@ public class DeptConsumerController {
     @Autowired
     RestTemplate restTemplate;
 
-    private static final String REST_URL_PREFIX = "http://localhost:8001";
+    // ribbon实现的时候，这里的地址应该是一个变量，通过服务名来访问
+//    private static final String REST_URL_PREFIX = "http://localhost:8001";
+    private static final String REST_URL_PREFIX = "http://SC-PROVIDER-DEPT";
 
     @RequestMapping("/consumer/dept/get/{id}")
     public Dept get(@PathVariable("id") Long id) {

@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="scconsumerdept8002" />
         <module name="scproviderdept8001" />
+        <module name="scproviderdept8002" />
+        <module name="scproviderdept8003" />
         <module name="springcloudapi" />
         <module name="springcloudeureka7001" />
         <module name="springcloudeureka7002" />
