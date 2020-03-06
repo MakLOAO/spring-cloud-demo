@@ -18,8 +18,6 @@ public class DeptConsumerController {
     private DeptClientService service;
     // 此时使用的不再是RestTemplate，而是我们封装好的这个service，而RESTful路径已经在这个类中封装好了
 
-    private static final String REST_URL_PREFIX = "http://SC-PROVIDER-DEPT";
-
     @RequestMapping("/consumer/dept/get/{id}")
     public Dept get(@PathVariable("id") Long id) {
         return this.service.queryById(id);

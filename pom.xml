@@ -22,6 +22,7 @@
         <module>sc-provider-dept-8002</module>
         <module>sc-provider-dept-8003</module>
         <module>sc-consumer-dept-feign</module>
+        <module>sc-provider-dept-hystrix-8001</module>
     </modules>
 
     <packaging>pom</packaging>
