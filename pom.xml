@@ -25,6 +25,7 @@
         <module>sc-provider-dept-hystrix-8001</module>
         <module>sc-consumer-hystrix-dashboard</module>
         <module>springcloud-zuul-9527</module>
+        <module>springcloud-config-server-3344</module>
     </modules>
 
     <packaging>pom</packaging>

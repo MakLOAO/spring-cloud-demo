@@ -14,6 +14,7 @@
         <module name="scproviderdept8003" />
         <module name="scproviderdepthystrix8001" />
         <module name="springcloudapi" />
+        <module name="springcloudconfigserver3344" />
         <module name="springcloudeureka7001" />
         <module name="springcloudeureka7002" />
         <module name="springcloudeureka7003" />
