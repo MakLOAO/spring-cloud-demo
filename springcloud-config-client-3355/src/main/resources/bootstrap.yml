@@ -1,0 +1,9 @@
+# 系统级别的配置
+spring:
+  cloud:
+    config:
+      # 服务器连接远程仓库，客户端连接服务器
+      uri: http://localhost:3344
+      name: config-client # 需要从git上读取资源的名称，不需要后缀
+      profile: dev # 哪个环境
+      label: master # git的哪个分支访问
